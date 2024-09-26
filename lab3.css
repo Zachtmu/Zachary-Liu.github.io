@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #da72df; /* Light pink background */
+    color: #4b0082; /* dark purple text color */
+    margin: 10pt; /* Margin of 10pt for all sides */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    color: #860176; /* dark purple color */
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #4682b4; /* SteelBlue color */
+}
+
+h3 {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #4581ef; /* Blue color */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 14pt;
+    color: #333333; /* Dark Gray color */
+}
+
+/* Link Styles */
+a:link, a:visited {
+    color: #b300ff; /* lightBlue color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000; /* Red color */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #1d1d1d; /* Black color */
+    text-decoration: underline;
+}
+
+/* Div Styling for Text and Links */
+.text-div {
+    padding: 10px;
+    background-color: #e6e6fa; /* Lavender background */
+    border: 1px solid #cccccc;
+}
+
+.link-div {
+    padding: 10px;
+    background-color: #f5f5f5; /* WhiteSmoke background */
+    border: 1px solid #cccccc;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #2a2aaa; /* Navy color */
+}
+
+td {
+    background-color: #e5a5f0; /* pastel violet */
+}
+
+/* List inside table cells */
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 20px;
+}
