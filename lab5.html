@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="lab5.css">
+  <script src="lab5.js" defer></script>
+</head>
+<body>
+  <h1>Welcome to Zachary's Website</h1>
+
+  <!-- Task a: Button to prompt the user for their name -->
+  <button id="nameButton">Click to Enter Your Name</button>
+  <p id="nameDisplay"></p>
+
+  <!-- Task b: Clickable image -->
+  <img id="profilePic" src="images/testimage.jpg" alt="My Picture" width="200" height="200">
+
+  <!-- Task c & d: Navigation Menu -->
+  <nav>
+    <a href="page1lab5.html" onmouseover="mOver(this)" onmouseout="mOut(this)">Page 1</a>
+    <a href="page2lab5.html" onmouseover="mOver(this)" onmouseout="mOut(this)">Page 2</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">More</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="https://www.linkedin.com/in/zachary-liu-b06837217/">Link 1</a>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">Link 2</a>
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>
