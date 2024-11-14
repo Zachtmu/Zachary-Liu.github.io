@@ -10,24 +10,26 @@
 
     <header>
         <h1>Accessible Webpage Demo</h1>
-        <button onclick="toggleTextSize()">Toggle Text Size</button>
-        <button onclick="toggleBackgroundColor()">Toggle Background Color</button>
+        <div class="button-group">
+            <button onclick="toggleTextSize()">Change Text Size</button>
+            <button onclick="toggleBackgroundColor()">Dark Mode</button>
+            <button onclick="displayAltText()">Show Alt Text for Images</button>
+        </div>
     </header>
 
     <!-- Audio/Video Section -->
     <section>
         <h2>Media Section</h2>
         <figure>
-            <!-- Embed your own audio or video file here -->
             <audio controls>
-                <source src="audiofile.mp3" type="audio/mp3">
+                <source src="your-audio-file.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
-            <figcaption>This is Hiroshi Satoh - This Boy.</figcaption>
+            <figcaption>This audio is recorded by [Your Name, Year].</figcaption>
         </figure>
     </section>
 
-    <!-- Image Section with Alt Text Button -->
+    <!-- Image Section -->
     <section>
         <h2>Image Gallery</h2>
         <div class="image-container">
@@ -43,7 +45,6 @@
                 <img src="image3.jpg" alt="A description of image 3" id="img3">
                 <figcaption>Taken on [Date] at [Location]</figcaption>
             </figure>
-            <button onclick="displayAltText()">Show Alt Text for Images</button>
         </div>
     </section>
 
