@@ -1,6 +1,13 @@
-// Increase Text Size
-function increaseTextSize() {
-    document.body.style.fontSize = "1.2em";
+// Toggle Text Size
+let isTextLarge = false;
+
+function toggleTextSize() {
+    if (!isTextLarge) {
+        document.body.style.fontSize = "1.2em";
+    } else {
+        document.body.style.fontSize = "1em";
+    }
+    isTextLarge = !isTextLarge;
 }
 
 // Toggle Background Color for Accessibility
