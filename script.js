@@ -1,5 +1,6 @@
 // Toggle Text Size
 let isTextLarge = false;
+let isDarkMode = false;
 
 function toggleTextSize() {
     if (!isTextLarge) {
@@ -10,11 +11,25 @@ function toggleTextSize() {
     isTextLarge = !isTextLarge;
 }
 
-// Toggle Background Color for Accessibility
+// Toggle Background Color for Accessibility and Change Caption Colors
 function toggleBackgroundColor() {
     let body = document.body;
-    body.style.backgroundColor = body.style.backgroundColor === 'black' ? 'white' : 'black';
-    body.style.color = body.style.color === 'white' ? 'black' : 'white';
+    let captions = document.querySelectorAll('figcaption');
+    
+    if (!isDarkMode) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        captions.forEach(caption => {
+            caption.style.color = "white";
+        });
+    } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+        captions.forEach(caption => {
+            caption.style.color = "#555"; // Reset to original color
+        });
+    }
+    isDarkMode = !isDarkMode;
 }
 
 // Display Alt Text for Images
